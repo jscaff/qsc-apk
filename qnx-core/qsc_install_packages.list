@@ -62,6 +62,7 @@ com.qnx.qnx800.target.net.devutils/0.3.0.00600T202507302003L
 # qnx-os-services
 com.qnx.qnx800.target.os_services.base/1.0.0.03063T202511271306L
 com.qnx.qnx800.target.os_services.mqueue/1.1.0.00111T202602271127L
+com.qnx.qnx800.target.os_services.libjson/0.4.0.03063T202511271306L
 # qnx-packaging
 # qnx-pci-capabilities
 com.qnx.qnx800.target.pci.capabilities/3.0.1.02005T202411230033L
