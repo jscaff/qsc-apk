@@ -50,7 +50,6 @@ dev() {
 
 openssl3() {
 	pkgdesc="qcrypto provider - OpenSSL 3"
-    pkgver="8.0.3"
     depends="libcrypto3"
     provides="qnx-crypto-plugin"
 
