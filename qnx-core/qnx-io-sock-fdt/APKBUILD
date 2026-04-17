@@ -1,6 +1,6 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname="qnx-io-sock-fdt"
-pkgver=8.0.3
+pkgver=8.0.4
 _iosock_fdt_ver="0.3.0.00600T202507302003L"
 pkgrel=0
 pkgdesc="io-sock driver for various FDT based NICs"

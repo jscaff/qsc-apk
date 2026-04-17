@@ -1,6 +1,6 @@
 pkgname="qnx-usb"
 _usb_base_version="0.0.1.00443T202311201012L"
-pkgver=8.0.3
+pkgver=8.0.4
 pkgrel=0
 pkgdesc="QNX usb support"
 url="https://qnx.com"

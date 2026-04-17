@@ -1,6 +1,6 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname="qnx-bsp-rpi5"
-pkgver=8.0.3
+pkgver=8.0.4
 _bsp_rpi5_version=0.3.0.00381T202512101351L
 _raspberrypi_firmware_release="1.20250915" 
 pkgrel=0

@@ -1,5 +1,5 @@
 pkgname="qnx-devu-hcd-dwc3"
-pkgver=8.0.3
+pkgver=8.0.4
 _devu_hcd_dwc3_version=0.1.0.00058T202603271639L
 pkgrel=1
 pkgdesc="QNX USB - XHCI DWC3"
