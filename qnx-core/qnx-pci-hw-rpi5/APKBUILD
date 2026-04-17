@@ -1,6 +1,6 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname="qnx-pci-hw-rpi5"
-pkgver=8.0.3
+pkgver=8.0.4
 _pci_hw_rpi5_version="3.0.0.03044T202509231229L"
 pkgrel=0
 pkgdesc="QNX PCI Strings module"
