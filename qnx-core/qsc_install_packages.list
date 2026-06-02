@@ -55,7 +55,7 @@ com.qnx.qnx800.target.base.libelf/0.0.1.00135T202311191043L
 com.qnx.qnx800.target.base.libregex/1.0.0.00600T202507302003L
 com.qnx.qnx800.target.base.libcatalog/1.0.0.00600T202507302003L
 com.qnx.qnx800.target.base.libforksafe_mutex/2.4.0.00111T202602271127L
-com.qnx.qnx800.target.base/0.0.1.02566T202508030714L
+com.qnx.qnx800.target.base/0.0.1.00135T202311191043L
 # qnx-netutils
 com.qnx.qnx800.target.net.utils/0.3.0.00600T202507302003L
 com.qnx.qnx800.target.net.devutils/0.3.0.00600T202507302003L
