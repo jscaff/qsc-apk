@@ -3,14 +3,13 @@ pkgver=8.0.4
 _gcc_version=12.2.0.00301T202506091801L
 _cpp_base_version=18.0.0.01302T202507301719L
 _cpp_tools_version=12.2.0.00301T202506091801L
-pkgrel=0
+pkgrel=1
 pkgdesc="Self-hosted QNX toolchain"
 url="https://qnx.com"
 arch="all"
 license="LicenseRef-QDL-Non-Commercial"
 options="!strip !tracedeps"
 #install="$pkgname.post-install $pkgname.post-upgrade"
-depends="qnx-icu-libs binutils"
 subpackages="qnx-gcc-libs qnx-libc++-dev:_libcxx_dev"
 source=" 
     gcc_linux_$_gcc_version.qpkg::$QSC_URL/com.qnx.qnx800.host.linux.x86_64.gcc/$_gcc_version/download
