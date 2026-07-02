@@ -16,6 +16,7 @@ qnx-io-sock-cgem
 qnx-io-sock-pci
 qnx-io-sock-phy
 qnx-io-sock-virtio
+qnx-io-sock-fdt
 qnx-libexpat
 qnx-libfdt
 qnx-libpci
@@ -37,4 +38,5 @@ qnx-slogger2
 qnx-tools
 qnx-zlib
 qnx-utils
+qnx-ncurses
 qnx-base

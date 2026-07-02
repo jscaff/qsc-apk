@@ -1,17 +1,17 @@
-# Maintainer: Leo Shen <yishen@qnx.com>
-pkgname="qnx-io-sock-virtio"
+# Maintainer: Aaron Bassett <abassett@qnx.com>
+pkgname="qnx-io-sock-fdt"
 pkgver=8.0.5
-_qpkg_name="com.qnx.qnx800.target.net.devsvirtio"
-_qpkg_ver="0.5.0.00015T202605220948L"
+_iosock_fdt_ver="0.5.0.00015T202605220948L"
 pkgrel=0
-pkgdesc="io-sock driver for various virtio NICs"
+pkgdesc="io-sock driver for various FDT based NICs"
 url="https://qnx.com"
-arch="all"
+arch="aarch64"
 license="LicenseRef-QDL-Non-Commercial"
 options="!strip !tracedeps"
+depends="qnx-libfdt"
 subpackages="$pkgname-dev"
 source="
-    $_qpkg_name-$_qpkg_ver.qpkg::$QSC_URL/$_qpkg_name/$_qpkg_ver/download
+    iosock-fdt_$_iosock_pci_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.net.devsfdt/$_iosock_fdt_ver/download
 "
 
 prepare() {
@@ -31,10 +31,11 @@ package() {
     echo "Moving arch-specific ($_qarch) files"
     cp -r "$srcdir"/target/qnx/$_qarch/* "$pkgdir"/
 
+
     echo "Relocating bin and lib for a merged /usr"
     mkdir -p "$pkgdir"/usr/lib
     mv "$pkgdir"/lib/* "$pkgdir"/usr/lib/
-    rm -r "$pkgdir"/lib
+    rmdir "$pkgdir"/lib
 }
 
 dev() {
@@ -43,6 +44,7 @@ dev() {
 }
 
 
+
 sha512sums="
-ca2e39cb8079111a24a7688b6bf01bbd9b1ca7916b12d8f08c365d51126a3f29ffb58d5b014b881cbcbb776db37878eda5e5d2c8413b39a188fa910f2f609a89  com.qnx.qnx800.target.net.devsvirtio-0.5.0.00015T202605220948L.qpkg
+83fcf0bef12a36b753a33943c058e9c056a5ec97289e913f0c3b933324ac2d199bc0f74ee5375a3eb9c4d626f813c090e563e450358e89e3c0ab602fb8aebe13  iosock-fdt_.qpkg
 "

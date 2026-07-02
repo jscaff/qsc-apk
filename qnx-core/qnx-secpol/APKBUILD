@@ -1,7 +1,7 @@
 # Maintainer: Aaron Bassett <abassett@qnx.com>
 pkgname="qnx-secpol"
-pkgver=8.0.4
-_secpol_version=0.3.0.00600T202507302003L
+pkgver=8.0.5
+_secpol_version=0.5.0.00132T202605281115L
 pkgrel=0
 pkgdesc="QNX Securitly Policy Libraries"
 url="https://qnx.com"
@@ -41,5 +41,5 @@ dbg() {
 }
 
 sha512sums="
-308f0c562ebaf199ce750dea9f02781f36d279d84c196407b299faaf727e0c4370106b84919b46ef5349cdd611c3380ac7089555e0b7e64f21565b6c272eb331  secpol_0.3.0.00600T202507302003L.qpkg
+41afe0db712a90757ebc2403d77485ac2181726c5b4963f34b65914cd7165bfca39f7064a0ce8b9dd8a080918197025c6ddf2fcecd9caf69923bee15fda2e24d  secpol_0.5.0.00132T202605281115L.qpkg
 "

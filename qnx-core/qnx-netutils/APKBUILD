@@ -1,8 +1,7 @@
 # Maintainer: Leo Shen <yishen@qnx.com>
 pkgname="qnx-netutils"
-pkgver=8.0.4
-_net_utils_ver=0.3.0.00600T202507302003L
-_net_devutils_ver=0.3.0.00600T202507302003L
+pkgver=8.0.5
+_net_utils_ver=0.5.0.00015T202605220948L
 pkgrel=0
 pkgdesc="QNX Networking - Utilities"
 url="https://qnx.com"
@@ -13,7 +12,7 @@ depends="qnx-libexpat"
 subpackages="$pkgname-dev"
 source="
     net-utils_$_net_utils_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.net.utils/$_net_utils_ver/download
-    net-devutils_$_net_devutils_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.net.devutils/$_net_devutils_ver/download
+    net-devutils_$_net_devutils_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.net.devutils/$_net_utils_ver/download
 "
 
 prepare() {
@@ -53,6 +52,6 @@ dev() {
 
 
 sha512sums="
-8520caca848886d254f04b00d22304a4bfb358066c7ff88bd45b7fdc4c23688878933940cff298ee13a3e762e382b27a74c3a3d723bec73ca11a9549e6d9652b  net-utils_0.3.0.00600T202507302003L.qpkg
-af3479104c80054878cf3e4f94f99b4fb7ced3745cc8aea42ea04c1840ad2b7dcdb11c1deea5d166eba504fbd9348b4c2ea8a6e3de91befa691ece580429b0fe  net-devutils_0.3.0.00600T202507302003L.qpkg
+59ec7d63f76b4218616a4e8b2cc2908072bf7dbde979535c4208114f847ba2208dd1cf92ff4dd5278d9e0cb8d42b9cce9c156e7605749b2d5b163113c4d729c4  net-utils_0.5.0.00015T202605220948L.qpkg
+695157b5e63ad76497b15382a5ac42274bd004720e2efd9987d99a0e0fda1e39b7475de875f7f54cd93b1736bdc95af07eb5048d02b32c12c607136b56f9a5c9  net-devutils_.qpkg
 "

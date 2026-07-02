@@ -1,8 +1,8 @@
 # Maintainer: Aaron Bassett <abaseett@qnx.com>
 pkgname="qnx-io-sock-phy"
-pkgver=8.0.4
+pkgver=8.0.5
 _qpkg_name="com.qnx.qnx800.target.net.modsphy"
-_qpkg_ver="0.3.0.00600T202507302003L"
+_qpkg_ver="0.5.0.00015T202605220948L"
 pkgrel=0
 pkgdesc="io-sock driver for various PHY devices"
 url="https://qnx.com"
@@ -55,5 +55,5 @@ dbg() {
 
 
 sha512sums="
-147b5a9de3cbfa4cec7e2216a316eca7eec941f7bc7e65d954c3998c4f60c388bc5bbd9743d37e30c5d02556b4557c1064942e16f88ef0776a0fa2860848a55c  com.qnx.qnx800.target.net.modsphy-0.3.0.00600T202507302003L.qpkg
+5f442c70263da5f24bd11e8c786d585d20a9ffeed1aeac5a1f2a4bba426dfac42228e0ef7bbbd9d9efe50f77503659e36a943ee6abfe52745c6868fbbfafa26c  com.qnx.qnx800.target.net.modsphy-0.5.0.00015T202605220948L.qpkg
 "

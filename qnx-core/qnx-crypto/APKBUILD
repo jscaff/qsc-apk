@@ -1,9 +1,8 @@
 pkgname="qnx-crypto"
-pkgver=8.0.4
-_qcrypto_core_ver=0.0.2.02005T202411230033L
-_cryptodev_ver=0.0.1.00135T202311191043L
+pkgver=8.0.5
+_qcrypto_core_ver=0.5.0.00132T202605281115L
 _qcrypto_openssl_ver=0.0.2.02029T202501171702L
-pkgrel=0
+pkgrel=1
 pkgdesc="QNX crypto library"
 url="https://qnx.com"
 arch="all"
@@ -11,7 +10,7 @@ license="LicenseRef-QDL-Non-Commercial"
 options="!strip !tracedeps"
 subpackages="$pkgname-dev $pkgname-openssl3"
 source="qcrypto_core_$_qcrypto_core_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.security.crypto.qcrypto.core/$_qcrypto_core_ver/download
-    cryptodev_$_cryptodev_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.security.crypto.cryptodev/$_cryptodev_ver/download
+    cryptodev_$_cryptodev_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.security.crypto.cryptodev/$_qcrypto_core_ver/download
     qcrypto_openssl_$_qcrypto_openssl_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.security.crypto.qcrypto.openssl3/$_qcrypto_openssl_ver/download
 "
 
@@ -51,7 +50,7 @@ dev() {
 openssl3() {
 	pkgdesc="qcrypto provider - OpenSSL 3"
     depends="libcrypto3"
-    provides="qnx-crypto-plugin"
+    provides="qnx-crypto-plugin=$pkgver-r$pkgrel"
 
 	amove usr/lib/dll/*
     rm "$subpkgdir"/usr/lib/dll/*.sym
@@ -60,7 +59,7 @@ openssl3() {
 }
 
 sha512sums="
-ab97297bb0946dcd7a5a9f577234b9a0065e5e2fba0d1706ceaec1b5619ae92a6b8d3a32dfba78e0c1b125ef752b4c7619a0698371d8ef49c1e7fdf68d2c9596  qcrypto_core_0.0.2.02005T202411230033L.qpkg
-3a9a09cabf7524448cf974b074cf8283bff15cc56971cc5445b7768f9bb81175ad1a6ee2a4121fd1758ba8b4911a50ad48144661c44d24c79ef61b68f6168acd  cryptodev_0.0.1.00135T202311191043L.qpkg
+9594084855219ac4601935b735abe56836e95f44cf3bde4550360d5a62fcbfbd2686640401b5bf69a2fffff36246ef72bc17ce3f0fdf64aafbc285f34b89f438  qcrypto_core_0.5.0.00132T202605281115L.qpkg
+3dbb7fecbc630482fb0d2391b83c8a7b970bd6f3971b852e6c29a7468ee37186c98bd852ff76042d937fbc7f0f1468de554df101cc8f4fba2f8921993f708ea2  cryptodev_.qpkg
 0d20adb7f101e8afce7241ab91f701b7b98dcde1eb3dc15fbef86875b93f3c260db1b7342681d41d16e82f1a2882ee99d40fbcf1bb8717809518822970ef97f5  qcrypto_openssl_0.0.2.02029T202501171702L.qpkg
 "

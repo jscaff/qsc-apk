@@ -1,6 +1,6 @@
 pkgname="qnx-fs-utils"
-pkgver=8.0.4
-_fs_utils_version=0.0.2.02005T202411230033L
+pkgver=8.0.5
+_fs_utils_version=0.1.0.00132T202605281115L
 pkgrel=0
 pkgdesc="QNX800 filesystem core libraries"
 url="https://qnx.com"
@@ -35,5 +35,5 @@ package() {
 
 
 sha512sums="
-bab840a1c449e1942568a182bfd4efa1619566f4f04aed4d1d36b2ed5457cff5b5f9d23e15fb79f9d78cfe56187e82fead56097aa0176a4026850eefe9a1fb0c  fs_utils_0.0.2.02005T202411230033L.qpkg
+8a01edd1e2580b1878264a7544c4eefc762c82759ab5bc9eb1b9f9f9c7e7284516c02e755c9296c7a436475823068a161715ccb6d08a6d01e9f6a712ba5a28fe  fs_utils_0.1.0.00132T202605281115L.qpkg
 "

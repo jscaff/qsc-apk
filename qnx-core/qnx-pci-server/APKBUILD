@@ -1,6 +1,6 @@
 pkgname="qnx-pci-server"
-pkgver=8.0.4
-_pci_version="3.1.1.02005T202411230033L"
+pkgver=8.0.5
+_pci_version="3.2.1.03075T202605211339L"
 pkgrel=0
 pkgdesc="QNX PCI Server"
 url="https://qnx.com"
@@ -45,5 +45,5 @@ dev() {
 }
 
 sha512sums="
-88c0dbd06d2941b9e01512ed92d0beb2b1b5f4f13193b90703b83ffde9f2e56ef4c5c34c5ccb11dad5de26023d53b44af5472a01e94aa37b647c299dc6584b9e  pci_sever_3.1.1.02005T202411230033L.qpkg
+e19ded9982944e9471e250222e2583a2e8eedf787ab0cf9acdacfb8df500ab8840fc6f252346f11535a6e6f82a0989e5100c14d233bef5080b023f4be0ddef3e  pci_sever_3.2.1.03075T202605211339L.qpkg
 "

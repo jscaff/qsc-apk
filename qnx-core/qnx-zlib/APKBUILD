@@ -1,15 +1,15 @@
 # Maintainer: Leo Shen <yishen@qnx.com>
 pkgname=qnx-zlib
-pkgver=8.0.4
+pkgver=8.0.5
 pkgrel=0
-_qnx_compression_ver=0.3.0.00600T202507302003L
+_qnx_compression_ver=0.4.0.00132T202605281115L
 pkgdesc="QNX's own zlib port, DO NOT USE FOR PORTING"
 url="https://qnx.com"
 arch="all"
 license="LicenseRef-QDL-Non-Commercial"
 options="!strip !tracedeps"
 subpackages="$pkgname-dbg"
-source="qnx-compression-$_qnx_compression_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.base.compression/$_qnx_compression_ver/download"
+source="qnx-compression-$_qnx_compression_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.base.compression.libz/$_qnx_compression_ver/download"
 
 prepare() {
    for qpkg in *.qpkg; do
@@ -36,5 +36,5 @@ dbg() {
 }
 
 sha512sums="
-7f82c83e7248d48416a40b067f666cb489ee96782501a481f5cfe8d9973db88e20e54eec858ba5b314b28c93e42906691da22b51a48bf6e727857c59c0eea6b7  qnx-compression-0.3.0.00600T202507302003L.qpkg
+8ff0653914074d8a281c45f2d388d3b885fb69fad5c5daba8b9a959fefbd4da31d0bb5526f51184632ca4650e00807cd3032f805908c4341ae2548e2826a2658  qnx-compression-0.4.0.00132T202605281115L.qpkg
 "

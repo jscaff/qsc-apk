@@ -1,6 +1,6 @@
 pkgname="qnx-pci-strings"
-pkgver=8.0.4
-_pci_strings_version="3.0.0.02005T202411230033L"
+pkgver=8.0.5
+_pci_strings_version="3.0.1.03075T202605211339L"
 pkgrel=0
 pkgdesc="QNX PCI Strings module"
 url="https://qnx.com"
@@ -42,5 +42,5 @@ dev() {
 }
 
 sha512sums="
-448d8d0864b5b64880f337e0dcfa6c7a949bc41818a3fe30e861e6320e469979f3f2b52b478d1691b57f201c575723efe1df25465d785535b69f8de0c7e3764d  pci_strings_3.0.0.02005T202411230033L.qpkg
+9f60963b9cb988fba3c558005e37f7b636ca822c6124010e283fb06df2770c24442f9d7297b61980e1ddd23c54fac05e9ea005e80f3c274e5a347345bb45ef53  pci_strings_3.0.1.03075T202605211339L.qpkg
 "

@@ -1,5 +1,5 @@
 pkgname="qnx-devc"
-pkgver=8.0.4
+pkgver=8.0.5
 _devc_version=0.2.0.00011T202411230100L
 pkgrel=0
 pkgdesc="QNX Connectivity Serial"
@@ -11,7 +11,7 @@ options="!strip !check !tracedeps"
 subpackages="$pkgname-dbg $pkgname-dev qnx-devc-pty qnx-devc-ser8250 qnx-devc-serpci"
 source="devc_$_devc_version.qpkg::$QSC_URL/com.qnx.qnx800.target.connectivity.devc/$_devc_version/download"
 
-if [[$CARCH == "x86_64" ]]; then
+if [[ $CARCH == "x86_64" ]]; then
   subpackages="$subpackages qnx-devc-con qnx-devc-con-hid"
 fi
 

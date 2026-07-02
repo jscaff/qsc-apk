@@ -1,6 +1,6 @@
 pkgname="qnx-libpci"
-pkgver=8.0.4
-_libpci_version=3.0.3.02005T202411230033L
+pkgver=8.0.5
+_libpci_version=3.0.4.03075T202605211339L
 pkgrel=0
 pkgdesc="QNX PCI Library"
 url="https://qnx.com"
@@ -40,5 +40,5 @@ dev() {
 }
 
 sha512sums="
-a427343a16bcdb08017ea5af9415014b34c4f94f6c776c791dd31c2b6693f90bac67dcb3551e5d1c68258d833e257ce6119a04910f94ff152880879c0f94efd6  libpci_3.0.3.02005T202411230033L.qpkg
+3173c5e643236d278fdda84c6f3da8a74a2b68d3a28cce70926e7dfda7bf19df44d829959c26525dd4d2f01609a2ebe3956c1cbd739fcc7590c6ef313906d6a8  libpci_3.0.4.03075T202605211339L.qpkg
 "

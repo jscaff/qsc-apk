@@ -1,6 +1,6 @@
 pkgname="qnx-fs-gpt"
-pkgver=8.0.4
-_fs_gpt_version=0.0.2.02005T202411230033L
+pkgver=8.0.5
+_fs_gpt_version=0.1.0.00132T202605281115L
 pkgrel=0
 pkgdesc="QNX800 filesystem gpt libraries"
 url="https://qnx.com"
@@ -40,5 +40,5 @@ dev() {
 
 
 sha512sums="
-748682282ede4b559db2225c8df4a4256672caad7663ffb2c95f8c289493d75afa64dcfcba79a24ad6307aae7cc46a7760bf47cdd626ed467a83cbb43ed131d9  fs_gpt_0.0.2.02005T202411230033L.qpkg
+ee095a4b6e619160f3ef1039a21222d21baa606a13814716551245520482dd92697a6ed364e13bfdceab5c14f2b8c10d00b484e783a12c67ad73b8b3d19c9401  fs_gpt_0.1.0.00132T202605281115L.qpkg
 "

@@ -1,6 +1,6 @@
 pkgname="qnx-pci-capabilities"
-pkgver=8.0.4
-_pci_capabilities_version="3.0.1.02005T202411230033L"
+pkgver=8.0.5
+_pci_capabilities_version="3.0.1.03075T202605211339L"
 pkgrel=0
 pkgdesc="QNX PCI Capabilities"
 url="https://qnx.com"
@@ -42,5 +42,5 @@ dev() {
 }
 
 sha512sums="
-707a99e816fc1d8440be436d79c195b5bc9e747106756e47fce5d44d17ac42c4b6812611ae692b8e38b4a223131377aeede69df09e573f37af3c5a97a9951544  pci_capabilities_.qpkg
+99cc0d760f39741d0b4755d5df0361594c1102e5d9377237264bfbf97689ef62eea3171180e82a249161f20fea26272b60a007ac4575a477138421264aa8868a  pci_capabilities_.qpkg
 "
