@@ -13,7 +13,7 @@ subpackages="
     $pkgname-usb
 "
 
-source="qnx-devh.qpkg::$QSC_URL/com.qnx.qnx800.target.input.devh/0.0.1.00443T202311201012L/download
+source="qnx-devh.qpkg::$QSC_URL/com.qnx.qnx800.target.input.devh/0.1.0.00018T202604301101L/download
 "
 
 if [[ $CARCH == "aarch64" ]]; then
@@ -63,5 +63,5 @@ vmmouse() {
 
 
 sha512sums="
-cc13081dc9c2a0ea40a126c874c04a5209791d97093b1b8471431fb6697a1cb940a6bd3a95beffcb78b5af77b937c183dff67dc86c34319c795b7bff20c2332f  qnx-devh.qpkg
+d9b876ecc95daa8096d4067cdd8f9c791e6dcf9937768162a1c90d98a58b14c87ec2d2baf6869809b4cba2db320a4e9a0d9f77ffe9a5c9ff9605cbd4cc2cadc6  qnx-devh.qpkg
 "

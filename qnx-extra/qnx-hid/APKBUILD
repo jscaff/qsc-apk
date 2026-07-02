@@ -1,6 +1,6 @@
 pkgname="qnx-hid"
-pkgver=8.0.4
-_hid_version=0.1.0.00008T202412121448L
+pkgver=8.0.5
+_hid_version=0.1.0.00018T202604301101L
 pkgrel=0
 pkgdesc="QNX io Hid"
 url="https://qnx.com"
@@ -35,5 +35,5 @@ package() {
 }
 
 sha512sums="
-4bc85b873ac88fecd94b389d418ca593568aa8a01ef35d398b82c491f1db90ac74664992604dbfc3a5e945204ce9fd0f596beb9961b116db12d77d2a744acda1  hid_0.1.0.00008T202412121448L.qpkg
+dee8fc73727c5a5dc5b34f2eefff7e01a8b74344c48132e09f15b9c5557ed810a68d134d7fdb2c2d6f053e2de46292f750573db8d75d002faa6aadf2f7965386  hid_0.1.0.00018T202604301101L.qpkg
 "

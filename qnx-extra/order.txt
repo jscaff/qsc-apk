@@ -3,8 +3,13 @@ qnx-devh
 qnx-fd-notify
 qnx-hid
 qnx-keyboard
-qnx-libgbm
+#qnx-libgbm
 qnx-memstream
-qnx-screen-rpi
-qnx-ncurses
-qnx-sensor-framework
+qnx-screen
+#qnx-screen-rpi
+#qnx-ncurses
+#qnx-sensor-framework
+#qnx-libcontainer
+#qnx-qrunc
+#qnx-qcmgr
+#qnx-qcmctl
