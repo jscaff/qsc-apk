@@ -41,3 +41,4 @@ qnx-zlib
 qnx-utils
 qnx-ncurses
 qnx-base
+qnx-bsp-rpi5
