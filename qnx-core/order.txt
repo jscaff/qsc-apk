@@ -29,6 +29,7 @@ qnx-pci-capabilities
 qnx-pci-compat
 qnx-pci-debug
 qnx-pci-hw-x86
+qnx-pci-hw-rpi5
 qnx-pci-server
 qnx-pci-strings
 qnx-random

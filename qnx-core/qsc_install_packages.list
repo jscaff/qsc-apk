@@ -72,6 +72,8 @@ com.qnx.qnx800.target.pci.compat/3.0.0.02005T202411230033L
 com.qnx.qnx800.target.pci.debug/3.0.0.02005T202411230033L
 #qnx-pci-hw-x86
 com.qnx.qnx800.target.pci.hw.x86/3.1.0.02005T202411230033L
+#qnx-pci-hw-rpi5
+com.qnx.qnx800.target.pci.hw.bcm2712/3.0.0.03044T202509231229L
 #qnx-pci-server
 com.qnx.qnx800.target.pci.server/3.2.1.03075T202605211339L
 #qnx-pci-strings
