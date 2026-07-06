@@ -9,7 +9,4 @@ qnx-screen
 #qnx-screen-rpi
 #qnx-ncurses
 #qnx-sensor-framework
-#qnx-libcontainer
-#qnx-qrunc
-#qnx-qcmgr
-#qnx-qcmctl
+qnx-devu-hcd-dwc3-xhci
