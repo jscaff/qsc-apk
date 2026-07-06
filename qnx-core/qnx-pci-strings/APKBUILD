@@ -1,7 +1,7 @@
 pkgname="qnx-pci-strings"
 pkgver=8.0.5
 _pci_strings_version="3.0.1.03075T202605211339L"
-pkgrel=0
+pkgrel=1
 pkgdesc="QNX PCI Strings module"
 url="https://qnx.com"
 arch="all"
@@ -23,6 +23,7 @@ package() {
     mkdir -p "$pkgdir"
     echo "Moving common headers"
     mv "$srcdir"/target/qnx/usr "$pkgdir"
+    mv "$srcdir"/target/qnx/etc "$pkgdir"
 
     echo $CARCH
     _qarch=$CARCH
