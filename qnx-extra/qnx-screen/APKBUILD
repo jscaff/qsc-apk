@@ -35,6 +35,7 @@ source="screen_base_$_screen_base_version.qpkg::$QSC_URL/com.qnx.qnx800.target.s
         glesv2.pc
         vulkan.pc
         "
+builddir="$srcdir"
 
 if [[ $CARCH == "aarch64" ]]; then
     _arch_name=aarch64le

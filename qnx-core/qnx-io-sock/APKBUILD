@@ -14,6 +14,7 @@ source="
     iosock_$_iosocket_version.qpkg::$QSC_URL/com.qnx.qnx800.target.net.iosock/$_iosocket_version/download
     devsddk_$_devsddk_version.qpkg::$QSC_URL/com.qnx.qnx800.target.net.devsddk/$_devsddk_version/download
 "
+builddir="$srcdir"
 
 prepare() {
     for qpkg in *.qpkg; do

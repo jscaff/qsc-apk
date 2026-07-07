@@ -16,6 +16,7 @@ source="
     cpp_base_$_cpp_base_version.qpkg::$QSC_URL/com.qnx.qnx800.target.base.cpp/$_cpp_base_version/download
     cpp_tools_$_cpp_tools_version.qpkg::$QSC_URL/com.qnx.qnx800.target.tools.cpp/$_cpp_tools_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    mkdir ./gcc_linux

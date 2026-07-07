@@ -11,6 +11,7 @@ depends="qnx-gcc-libs qnx-secpol qnx-libslog2 qnx-zlib"
 subpackages="$pkgname-dbg $pkgname-dev"
 source="tools_$_tools_version.qpkg::$QSC_URL/com.qnx.qnx800.target.microkernel.tools/$_tools_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

@@ -11,6 +11,7 @@ depends="qnx-libslog2"
 subpackages="$pkgname-dev"
 source="pci_debug_$_pci_debug_version.qpkg::$QSC_URL/com.qnx.qnx800.target.pci.debug/$_pci_debug_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

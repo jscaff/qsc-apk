@@ -11,6 +11,7 @@ depends="qnx-gcc-libs qnx-secpol qnx-libslog2"
 subpackages="$pkgname-dev"
 source="slogger2_$_slogger2_version.qpkg::$QSC_URL/com.qnx.qnx800.target.microkernel.slogger2/$_slogger2_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

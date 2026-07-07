@@ -10,6 +10,7 @@ options="!strip !check !tracedeps"
 subpackages="$pkgname-dev"
 source="pci_capabilities_$_pci_capabilites_version.qpkg::$QSC_URL/com.qnx.qnx800.target.pci.capabilities/$_pci_capabilities_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

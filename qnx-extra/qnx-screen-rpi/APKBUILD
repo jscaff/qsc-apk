@@ -15,6 +15,7 @@ source="screen_rpi5_$_screen_rpi5_version.qpkg::$QSC_URL/com.qnx.qnx800.target.s
 screen_rip5_mesa_$_screen_rpi5_mesa_version.qpkg::$QSC_URL/com.qnx.qnx800.target.screen.board.rpi.mesa/$_screen_rpi5_mesa_version/download
 screen_rip5_drm_server_$_screen_rpi5_drm_server_version=.qpkg::$QSC_URL/com.qnx.qnx800.target.screen.board.rpi.server/$_screen_rpi5_drm_server_version/download
 "
+builddir="$srcdir"
 provides="qnx-screen-backend"
 _qarch=$CARCH
 if [[ $CARCH == "aarch64" ]]; then

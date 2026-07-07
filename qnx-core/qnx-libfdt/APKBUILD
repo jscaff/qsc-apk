@@ -10,6 +10,7 @@ options="!strip !tracedeps"
 subpackages="$pkgname-static $pkgname-dev"
 source="libfdt_$_libfdt_version.qpkg::$QSC_URL/com.qnx.qnx800.target.drivers.libfdt/$_libfdt_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

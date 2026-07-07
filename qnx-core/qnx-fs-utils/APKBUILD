@@ -10,6 +10,7 @@ options="!strip !tracedeps"
 depends="qnx-ncurses qnx-fs-core"
 source="fs_utils_$_fs_utils_version.qpkg::$QSC_URL/com.qnx.qnx800.target.fs.utils/$_fs_utils_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

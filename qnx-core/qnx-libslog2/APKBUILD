@@ -10,6 +10,7 @@ options="!strip !tracedeps"
 subpackages="$pkgname-dbg $pkgname-dev"
 source="libslog2_$_libslog2_version.qpkg::$QSC_URL/com.qnx.qnx800.target.microkernel.libslog2/$_libslog2_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

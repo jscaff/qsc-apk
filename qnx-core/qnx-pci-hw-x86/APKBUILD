@@ -11,6 +11,7 @@ depends="qnx-pci-hw-intel qnx-pci-hw-amd"
 subpackages="$pkgname-dbg qnx-pci-hw-intel qnx-pci-hw-amd"
 source="pci_hw_x86_$_pci_hw_x86_version.qpkg::$QSC_URL/com.qnx.qnx800.target.pci.hw.x86/$_pci_hw_x86_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

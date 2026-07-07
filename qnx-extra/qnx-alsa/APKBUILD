@@ -13,6 +13,7 @@ subpackages="$pkgname-dbg $pkgname-dev"
 source="qnx-alsa_$_version.qpkg::$QSC_URL/com.qnx.qnx800.target.sound.alsa/$_version/download
         alsa.pc
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

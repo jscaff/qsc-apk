@@ -15,6 +15,7 @@ subpackages="
 
 source="qnx-devh.qpkg::$QSC_URL/com.qnx.qnx800.target.input.devh/0.1.0.00018T202604301101L/download
 "
+builddir="$srcdir"
 
 if [[ $CARCH == "aarch64" ]]; then
     _arch_name=aarch64le

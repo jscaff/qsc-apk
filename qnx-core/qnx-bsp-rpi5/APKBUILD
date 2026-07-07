@@ -15,6 +15,7 @@ source="bsp_rpi5_$_bsp_rpi5_version.qpkg::$QSC_URL/com.qnx.qnx800.bsp.hw.raspber
 https://github.com/raspberrypi/firmware/archive/refs/tags/$_raspberrypi_firmware_release.zip
 msix-rp1-rework.patch
 "
+builddir="$srcdir"
 _qarch="aarch64le"
 
 _firmware_dir="$srcdir/firmware-$_raspberrypi_firmware_release/boot"

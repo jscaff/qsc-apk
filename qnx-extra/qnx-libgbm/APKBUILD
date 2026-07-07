@@ -12,6 +12,7 @@ options="!strip !tracedeps"
 subpackages="$pkgname-dbg $pkgname-dev"
 source="libgbm_$_screen_common_mesa_version.qpkg::$QSC_URL/com.qnx.qnx800.target.screen.board.common_mesa/$_screen_common_mesa_version/download
 "
+builddir="$srcdir"
 _qarch=$CARCH
 if [[ $CARCH == "aarch64" ]]; then
     export _qarch=aarch64le

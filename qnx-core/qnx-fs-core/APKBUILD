@@ -11,6 +11,7 @@ depends_dev="qnx-fs-gpt-dev"
 subpackages="$pkgname-dev"
 source="fs_base_$_fs_base_version.qpkg::$QSC_URL/com.qnx.qnx800.target.fs.base/$_fs_base_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

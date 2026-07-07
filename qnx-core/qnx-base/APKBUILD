@@ -16,3 +16,4 @@ package() {
 sha512sums="
 52f2c7b18758b00efd1ae6dbfec6195c4d96fe95f640d98e0c579d2eb6c8097a57cad23a8d835c04cc4fda3b97922a713c290a8f213fb36581645b6b178e3475  profile
 "
+builddir="$srcdir"

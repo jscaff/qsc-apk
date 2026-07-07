@@ -11,6 +11,7 @@ options="!strip !tracedeps"
 subpackages="$pkgname-dev"
 source="devc_virtio_$_devc_virtio_version.qpkg::$QSC_URL/com.qnx.qnx800.target.driver.virtio.devc/$_devc_virtio_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

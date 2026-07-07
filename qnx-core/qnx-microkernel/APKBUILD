@@ -23,6 +23,7 @@ source="microkernel_core_$_core_version.qpkg::$QSC_URL/com.qnx.qnx800.target.mic
     libforksafe_mutex_$_core_version.qpkg::$QSC_URL/com.qnx.qnx800.target.base.libforksafe_mutex/$_core_version/download
     $_target_base_filename.qpkg::$QSC_URL/com.qnx.qnx800.target.base/$_target_base_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

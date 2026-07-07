@@ -11,6 +11,7 @@ options="!strip !tracedeps"
 subpackages="$pkgname-dbg $pkgname-dev"
 source="secpol_$_secpol_version.qpkg::$QSC_URL/com.qnx.qnx800.target.security.secpol/$_secpol_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

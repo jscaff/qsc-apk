@@ -11,6 +11,7 @@ depends="qnx-libpci"
 subpackages="$pkgname-dev"
 source="pci_compat_$_pci_compat_version.qpkg::$QSC_URL/com.qnx.qnx800.target.pci.compat/$_pci_compat_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

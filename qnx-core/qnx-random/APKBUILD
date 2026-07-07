@@ -11,6 +11,7 @@ depends="qnx-crypto qnx-secpol qnx-libqh qnx-libslog2"
 subpackages="$pkgname-dbg $pkgname-dev $pkgname-virtio:virtio $pkgname-virtio-dbg:virtio-dbg $pkgname-file:file $pkgname-file-dbg:file-dbg"
 source="random_$_random_version.qpkg::$QSC_URL/com.qnx.qnx800.target.security.random/$_random_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

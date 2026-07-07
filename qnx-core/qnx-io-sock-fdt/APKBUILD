@@ -13,6 +13,7 @@ subpackages="$pkgname-dev"
 source="
     iosock-fdt_$_iosock_pci_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.net.devsfdt/$_iosock_fdt_ver/download
 "
+builddir="$srcdir"
 
 prepare() {
     for qpkg in *.qpkg; do

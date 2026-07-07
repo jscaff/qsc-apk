@@ -10,6 +10,7 @@ options="!strip !tracedeps"
 subpackages="$pkgname-dev"
 source="qnx-fd-notify_$_fd_notify_version.qpkg::$QSC_URL/com.qnx.qnx800.target.notify_fd/$_fd_notify_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

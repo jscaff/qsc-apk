@@ -11,6 +11,7 @@ depends="qnx-fs-cam qnx-libslog2 qnx-secpol qnx-libpci"
 subpackages="$pkgname-dev"
 source="devb_virtio_$_devb_virtio_version.qpkg::$QSC_URL/com.qnx.qnx800.target.driver.virtio.devb/$_devb_virtio_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

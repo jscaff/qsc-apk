@@ -13,6 +13,7 @@ subpackages="$pkgname-dbg"
 
 source="usb_hcd_xhci_dwc3_$_usb_dwc3_version.qpkg::$QSC_URL/com.qnx.qnx800.target.usb.hcd.xhci.dwc3/$_usb_dwc3_version/download
 "
+builddir="$srcdir"
 
 _arch_name=aarch64le
 

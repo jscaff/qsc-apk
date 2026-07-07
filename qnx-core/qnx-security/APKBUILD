@@ -14,6 +14,7 @@ source="
     pam_$_pam_version.qpkg::$QSC_URL/com.qnx.qnx800.target.security.pam/$_pam_version/download
     authentication_$_auth_version.qpkg::$QSC_URL/com.qnx.qnx800.target.security.authentication/$_auth_version/download
 "
+builddir="$srcdir"
 
 prepare() {
     for qpkg in *.qpkg; do

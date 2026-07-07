@@ -10,6 +10,7 @@ depends=""
 options="!strip !tracedeps"
 source="charvonc_$_charconv_version=.qpkg::$QSC_URL/com.qnx.qnx800.target.text.charconv/$_charconv_version/download
 "
+builddir="$srcdir"
 _qarch=$CARCH
 if [[ $CARCH == "aarch64" ]]; then
     export _qarch=aarch64le

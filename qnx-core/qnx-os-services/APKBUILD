@@ -21,6 +21,7 @@ source="os-services-base_$_os_service_version.qpkg::$QSC_URL/com.qnx.qnx800.targ
 os-services-mqueue_$_os_service_mqueue_version.qpkg::$QSC_URL/com.qnx.qnx800.target.os_services.mqueue/$_os_service_mqueue_version/download
 os-services-libjson_$_os_service_libjson_version.qpkg::$QSC_URL/com.qnx.qnx800.target.os_services.libjson/$_os_service_libjson_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

@@ -14,6 +14,7 @@ source="
     net-utils_$_net_utils_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.net.utils/$_net_utils_ver/download
     net-devutils_$_net_devutils_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.net.devutils/$_net_utils_ver/download
 "
+builddir="$srcdir"
 
 prepare() {
     for qpkg in *.qpkg; do

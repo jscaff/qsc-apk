@@ -13,6 +13,7 @@ source="qcrypto_core_$_qcrypto_core_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.sec
     cryptodev_$_cryptodev_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.security.crypto.cryptodev/$_qcrypto_core_ver/download
     qcrypto_openssl_$_qcrypto_openssl_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.security.crypto.qcrypto.openssl3/$_qcrypto_openssl_ver/download
 "
+builddir="$srcdir"
 
 prepare() {
     for qpkg in *.qpkg; do

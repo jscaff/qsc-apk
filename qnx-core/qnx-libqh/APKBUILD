@@ -11,6 +11,7 @@ depends="qnx-libslog2"
 subpackages="$pkgname-dbg $pkgname-dev"
 source="os-services-libqh_$_libqh_version.qpkg::$QSC_URL/com.qnx.qnx800.target.os_services.libqh/$_libqh_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

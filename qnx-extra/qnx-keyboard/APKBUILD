@@ -9,6 +9,7 @@ license="LicenseRef-QDL-Non-Commercial"
 options="!strip !tracedeps"
 source="usb_$_keyboard_version.qpkg::$QSC_URL/com.qnx.qnx800.target.input.keyboard/$_keyboard_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

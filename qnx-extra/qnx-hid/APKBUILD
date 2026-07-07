@@ -10,6 +10,7 @@ options="!strip !tracedeps"
 depends="qnx-secpol"
 source="hid_$_hid_version.qpkg::$QSC_URL/com.qnx.qnx800.target.os_services.hid/$_hid_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

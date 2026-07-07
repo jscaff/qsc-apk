@@ -12,6 +12,7 @@ options="!strip !check !tracedeps"
 subpackages="$pkgname-dbg"
 source="pci_hw_rpi5_$_pci_hw_rpi5_version.qpkg::$QSC_URL/com.qnx.qnx800.target.pci.hw.bcm2712/$_pci_hw_rpi5_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do

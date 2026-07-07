@@ -13,6 +13,7 @@ subpackages="$pkgname-dbg $pkgname-diag"
 source="
     $_qpkg_name-$_qpkg_ver.qpkg::$QSC_URL/$_qpkg_name/$_qpkg_ver/download
 "
+builddir="$srcdir"
 
 if [[ $CARCH == "aarch64" ]]; then
     subpackages+=" $pkgname-fdt"

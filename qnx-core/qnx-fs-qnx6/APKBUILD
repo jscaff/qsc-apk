@@ -10,6 +10,7 @@ options="!strip !tracedeps"
 subpackages="$pkgname-dev"
 source="fs_qnx6_$_fs_qnx6_version.qpkg::$QSC_URL/com.qnx.qnx800.target.fs.qnx6fs/$_fs_qnx6_version/download
 "
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do
