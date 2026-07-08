@@ -1,0 +1,18 @@
+#!/usr/bin/openrc-run
+
+description="QNX io-sock"
+
+command="/usr/bin/io-sock"
+command_args="$io_sock_args"
+command_background="true"
+priority=21
+pidfile="/var/run/io_sock.pid"
+
+depend() {
+	need random
+}
+
+start() {
+	default_start
+	ewaitfile 5 /dev/socket
+}

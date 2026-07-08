@@ -9,10 +9,12 @@ arch="all"
 license="LicenseRef-QDL-Non-Commercial"
 depends="qnx-secpol qnx-libslog2 qnx-zlib"
 options="!strip !tracedeps"
-subpackages="$pkgname-dbg $pkgname-dev"
+subpackages="$pkgname-dbg $pkgname-dev $pkgname-openrc"
 source="
     iosock_$_iosocket_version.qpkg::$QSC_URL/com.qnx.qnx800.target.net.iosock/$_iosocket_version/download
     devsddk_$_devsddk_version.qpkg::$QSC_URL/com.qnx.qnx800.target.net.devsddk/$_devsddk_version/download
+	io-sock.initd
+	io-sock.confd
 "
 builddir="$srcdir"
 
@@ -31,7 +33,7 @@ package() {
     if [[ $CARCH == "aarch64" ]]; then
         _qarch=aarch64le
     fi
-    
+
     echo "Moving arch-specific ($_qarch) files"
     cp -r "$srcdir"/target/qnx/$_qarch/* "$pkgdir"/
 
@@ -41,6 +43,9 @@ package() {
     rmdir "$pkgdir"/sbin
     mv "$pkgdir"/lib/* "$pkgdir"/usr/lib/
     rmdir "$pkgdir"/lib
+
+    install -Dm755 "$srcdir"/chronyd.initd "$pkgdir"/etc/init.d/chronyd
+    install -Dm644 "$srcdir"/chronyd.confd "$pkgdir"/etc/conf.d/chronyd
 }
 
 dbg() {
