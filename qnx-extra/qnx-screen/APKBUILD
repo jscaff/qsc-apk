@@ -4,7 +4,7 @@ pkgver=8.0.5
 _screen_base_version=4.3.0.00572T202605261514L
 _screen_demos_version=4.2.0.00070T202606011110L
 _vulkan_sdk_version=4.2.0.00007T202602120948L
-pkgrel=1
+pkgrel=2
 _pkgdesc="QNX800 Screen Board Support"
 _dbg_pkgdesc="$pkgdesc debug symbols and binaries"
 pkgdesc=$_pkgdesc
@@ -110,8 +110,11 @@ screen_demos() {
 
     mkdir -p "$subpkgdir"/usr/bin
 
-     cp -r "$srcdir"/screen_demos/target/qnx/$_arch_name/usr/bin/* "$subpkgdir"/usr/bin
+    cp -r "$srcdir"/screen_demos/target/qnx/$_arch_name/usr/bin/* "$subpkgdir"/usr/bin
     cp -r "$srcdir"/screen_demos/target/qnx/$_arch_name/bin/* "$subpkgdir"/usr/bin
+    cp -r "$srcdir"/screen_vulkan_sdk/target/qnx/"$_arch_name"/usr/bin/vkcube* "$subpkgdir"/usr/bin
+
+    rm -rf "$subpkgdir"/usr/bin/*.sym
 }
 
 _khr_dev() {
