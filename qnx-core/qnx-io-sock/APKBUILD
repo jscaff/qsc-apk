@@ -44,8 +44,8 @@ package() {
     mv "$pkgdir"/lib/* "$pkgdir"/usr/lib/
     rmdir "$pkgdir"/lib
 
-    install -Dm755 "$srcdir"/chronyd.initd "$pkgdir"/etc/init.d/chronyd
-    install -Dm644 "$srcdir"/chronyd.confd "$pkgdir"/etc/conf.d/chronyd
+    install -Dm755 "$srcdir"/io-sock.initd "$pkgdir"/etc/init.d/io-sock
+    install -Dm644 "$srcdir"/io-sock.confd "$pkgdir"/etc/conf.d/io-sock
 }
 
 dbg() {
@@ -57,6 +57,6 @@ dbg() {
 sha512sums="
 ae6a21be140d51053f11553ef9efd17d739887301b0e35b5ab635bc6a5b3d2beb3b36393a3c0c1538b737e34865c8e1ab5fa5984f89123ab2921252cd728f612  iosock_0.5.0.00015T202605220948L.qpkg
 cc3adfe7489891d71f5663865384296614b6c3316d1239b0c764740bd34eec2438c47fb1374e0ce4e052f52cdb6f3305bb90635e78421b56b039451ae294ddac  devsddk_0.5.0.00015T202605220948L.qpkg
-9b0057d3718b34a1df936c628cd2e3613aafd00e905555a1c55b3c44ca74b3707b29a0a0097cce8bbb8a6980ce3ffae2b525e39f8b0abd8b50f1c76d961571ed  io-sock.confd
 0bcd3f9d413cf75fa29e6d79020968654fb755a1a7a2c54044e312936f3d03cd91aa8cd940e8f7b5ee047b2a8a0fd18ed05f9467d7c24b954124f0e81f9f5011  io-sock.initd
+9b0057d3718b34a1df936c628cd2e3613aafd00e905555a1c55b3c44ca74b3707b29a0a0097cce8bbb8a6980ce3ffae2b525e39f8b0abd8b50f1c76d961571ed  io-sock.confd
 "
