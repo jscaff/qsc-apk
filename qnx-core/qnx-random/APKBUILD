@@ -8,8 +8,10 @@ arch="all"
 license="LicenseRef-QDL-Non-Commercial"
 options="!strip !tracedeps"
 depends="qnx-crypto qnx-secpol qnx-libqh qnx-libslog2"
-subpackages="$pkgname-dbg $pkgname-dev $pkgname-virtio:virtio $pkgname-virtio-dbg:virtio-dbg $pkgname-file:file $pkgname-file-dbg:file-dbg"
+subpackages="$pkgname-dbg $pkgname-dev $pkgname-virtio:virtio $pkgname-virtio-dbg:virtio-dbg $pkgname-file:file $pkgname-file-dbg:file-dbg $pkgname-openrc"
 source="random_$_random_version.qpkg::$QSC_URL/com.qnx.qnx800.target.security.random/$_random_version/download
+    random.initd
+	random.confd
 "
 builddir="$srcdir"
 
@@ -35,6 +37,9 @@ package() {
     cp -r "$srcdir"/target/qnx/$_qarch/usr/sbin/* "$pkgdir"/usr/bin
     echo "Moving arch-specific ($_qarch) libraries"
     cp -r "$srcdir"/target/qnx/$_qarch/lib/* "$pkgdir"/usr/lib/
+
+    install -Dm755 "$srcdir"/random.initd "$pkgdir"/etc/init.d/random
+    install -Dm644 "$srcdir"/random.confd "$pkgdir"/etc/conf.d/random
 }
 
 dbg() {
