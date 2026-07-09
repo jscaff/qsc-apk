@@ -10,6 +10,7 @@ options="!strip !tracedeps"
 depends="qnx-secpol qnx-libslog2 qnx-libqh"
 subpackages="$pkgname-dev"
 source="fs_notify_$_fs_notify_version.qpkg::$QSC_URL/com.qnx.qnx800.target.fs.notify/$_fs_notify_version/download"
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do
@@ -45,4 +46,3 @@ dev() {
 sha512sums="
 467b5f4e2d2a503d86f36101e88b39c74de7b46188a6d2ccbe550fbb7b829b6e3a70ed89f9aa886ef69d95b84010865330322a8602963774c5ed2476e5e03416  fs_notify_0.3.0.00006T202605070015L.qpkg
 "
-builddir="$srcdir"

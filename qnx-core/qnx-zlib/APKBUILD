@@ -10,6 +10,7 @@ license="LicenseRef-QDL-Non-Commercial"
 options="!strip !tracedeps"
 subpackages="$pkgname-dbg"
 source="qnx-compression-$_qnx_compression_ver.qpkg::$QSC_URL/com.qnx.qnx800.target.base.compression.libz/$_qnx_compression_ver/download"
+builddir="$srcdir"
 
 prepare() {
    for qpkg in *.qpkg; do
@@ -38,4 +39,3 @@ dbg() {
 sha512sums="
 8ff0653914074d8a281c45f2d388d3b885fb69fad5c5daba8b9a959fefbd4da31d0bb5526f51184632ca4650e00807cd3032f805908c4341ae2548e2826a2658  qnx-compression-0.4.0.00132T202605281115L.qpkg
 "
-builddir="$srcdir"

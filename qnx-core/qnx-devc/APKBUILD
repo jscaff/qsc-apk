@@ -10,6 +10,7 @@ depends="qnx-secpol qnx-libslog2"
 options="!strip !check !tracedeps"
 subpackages="$pkgname-dbg $pkgname-dev qnx-devc-pty qnx-devc-ser8250 qnx-devc-serpci"
 source="devc_$_devc_version.qpkg::$QSC_URL/com.qnx.qnx800.target.connectivity.devc/$_devc_version/download"
+builddir="$srcdir"
 
 if [[ $CARCH == "x86_64" ]]; then
   subpackages="$subpackages qnx-devc-con qnx-devc-con-hid"
@@ -84,4 +85,3 @@ ser8250() {
 sha512sums="
 06cd7882c397d42a2423273a2725715e7cfb32759518886a461a54a2be24d71137b2b87a05139f96e571b7607e586b4b827339f25ed4ccadd7a568ba0ddff735  devc_0.2.0.00011T202411230100L.qpkg
 "
-builddir="$srcdir"
