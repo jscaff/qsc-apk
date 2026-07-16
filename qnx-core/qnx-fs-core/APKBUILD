@@ -1,8 +1,8 @@
 pkgname="qnx-fs-core"
-pkgver=3
+pkgver=8.0.5
 _fs_base_version=0.1.1.00132T202605281115L
 pkgrel=0
-pkgdesc="QNX800 filesystem core libraries"
+pkgdesc="QNX filesystem core libraries"
 url="https://qnx.com"
 arch="all"
 license="LicenseRef-QDL-Non-Commercial"
