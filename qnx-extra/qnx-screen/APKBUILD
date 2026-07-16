@@ -5,7 +5,7 @@ pkgver=8.0.5
 _screen_base_version=4.3.0.00572T202605261514L
 _screen_demos_version=4.2.0.00070T202606011110L
 _vulkan_sdk_version=4.2.0.00007T202602120948L
-pkgrel=2
+pkgrel=3
 _pkgdesc="QNX800 Screen Board Support"
 _dbg_pkgdesc="$pkgdesc debug symbols and binaries"
 pkgdesc=$_pkgdesc
@@ -98,11 +98,11 @@ screen_dev() {
 
     default_dev
     # move libWFD.so back
-    mkdir -p "$pkgdir"/usr/lib/pkgconfig
+    mkdir -p "$subpkgdir"/usr/lib/pkgconfig
     mv "$subpkgdir"/usr/lib/libWFD.so "$pkgdir"/usr/lib
-    cp -L "$srcdir"/egl.pc "$pkgdir"/usr/lib/pkgconfig
-    cp -L "$srcdir"/glesv2.pc "$pkgdir"/usr/lib/pkgconfig
-    cp -L "$srcdir"/vulkan.pc "$pkgdir"/usr/lib/pkgconfig
+    cp -L "$srcdir"/egl.pc "$subpkgdir"/usr/lib/pkgconfig
+    cp -L "$srcdir"/glesv2.pc "$subpkgdir"/usr/lib/pkgconfig
+    cp -L "$srcdir"/vulkan.pc "$subpkgdir"/usr/lib/pkgconfig
 }
 
 screen_demos() {
