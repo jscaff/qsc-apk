@@ -1,6 +1,5 @@
 pkgname="qnx-libgbm"
 # This needs to be keeped in sync with the qnx-screen-{backend}
-# This also needs to stay in sync with the gbm.pc file vendored with this package
 _screen_common_mesa_version="25.1.1.00046T202510100921L"
 pkgver=8.0.4
 pkgrel=2
@@ -50,5 +49,5 @@ dbg(){
 
 sha512sums="
 32d9b03e60693629d26ee0024bab3804ece43f61fc9146cc2ba245d6f10e44ea09a00b4f72664ca6414f9778bb89dc82024bba11ac66eb9d72c48ca5d1fad6c2  libgbm_25.1.1.00046T202510100921L.qpkg
-f98b0bb9b3e26215e3320c7e74dcde9327c7c1ffa482dc9db8e72ce53d4d04853b47a4bc042abc641a6386707d69163818d48f81a86056bbaf12ef7d781b2e83  gbm.pc
+bf30dc782c0642a1b85f811fb6108e8d90b5eafb2e07f2f7515eb6f29a89d8bc83d5cf11c5d0f11bd4841493fb3b7df213d4088402e2e1b395144c96726d42dc  gbm.pc
 "
