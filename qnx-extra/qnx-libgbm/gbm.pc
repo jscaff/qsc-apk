@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libgbm
+Description: Mesa Generic Buffer Management services
+Version: 25.1.1
+Libs: -L${libdir} -lgbm
+Cflags: -I${includedir}
+
